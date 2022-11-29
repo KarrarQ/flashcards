@@ -16,11 +16,20 @@ describe('Deck', function() {
     })
   
     it('should be a function', function() {
-      expect(Deck).to.be.a('function');
+        expect(Deck).to.be.a('function');
     });
   
     it('should be an instance of Deck', function() {
-      expect(deck).to.be.an.instanceof(Deck);
+        expect(deck).to.be.an.instanceof(Deck);
     });
 
-});
+    it('each instance should hold an array of card objects', function() {
+        expect(deck.cards).to.be.a('array');
+      });
+    
+    it('should be able to count number of cards in the deck', function() {
+        deck.countCards();
+        expect(deck.countCards()).to.equal(3);
+      });
+    
+    });

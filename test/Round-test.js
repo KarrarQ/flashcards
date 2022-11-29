@@ -35,4 +35,14 @@ describe('Round', function() {
         expect(round.returnCurrentCard()).to.equal(cardOne);
     });
 
+    it('each time a turn is taken, the number of turns increment', function() {
+        round.takeTurn('guess');
+        expect(round.turns).to.equal(1);
+    });
+    
+    it('each time a turn is taken, the next card becomes the current card', function() {
+        round.takeTurn('guess');
+        expect(round.currentCard).to.equal(cardTwo);
+    })
+
 });

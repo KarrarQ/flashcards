@@ -44,5 +44,11 @@ describe('Round', function() {
         round.takeTurn('guess');
         expect(round.currentCard).to.equal(cardTwo);
     })
+    
+    it('the guess is evaluated and recorded for each turn', function() {
+        expect(round.incorrectGuesses.length).to.equal(0);
+        round.takeTurn('guess');
+        expect(round.incorrectGuesses.length).to.equal(1);
+      });
 
 });

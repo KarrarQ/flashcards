@@ -12,6 +12,9 @@ class Round {
         let newTurn = new Turn(guess, this.currentCard);
         this.turns++;
         this.returnCurrentCard();
+        if (guess !== this.currentCard.correctAnswer) {
+            this.incorrectGuesses.push(this.currentCard.id)
+          }
         // return newTurn;
       }
 }

@@ -22,4 +22,17 @@ describe('Round', function() {
       expect(Round).to.be.a('function');
     });
 
+    it('should be an instance of Round', function() {
+        expect(round).to.be.an.instanceof(Round);
+    });
+    
+    it('should have a current card', function() {
+        expect(round.currentCard).to.equal(cardOne);
+    });
+
+    it('should be able to display the current card', function() {
+        round.returnCurrentCard();
+        expect(round.returnCurrentCard()).to.equal(cardOne);
+    });
+
 });

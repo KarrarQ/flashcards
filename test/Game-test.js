@@ -28,9 +28,14 @@ describe('Game', function() {
   it('should be an instance of Game', function() {
     expect(game).to.be.an.instanceof(Game);
   });
-  
+
   it('should keep track of the current round', function() {
     expect(game.currentRound).to.exist;
+  });
+
+  it('should be a method to start the game and create cards in the deck', function() {
+    game.start();
+    expect(game.currentRound.currentCard).to.deep.equal(cardOne);
   });
 
 });

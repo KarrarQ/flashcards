@@ -29,4 +29,8 @@ describe('Game', function() {
     expect(game).to.be.an.instanceof(Game);
   });
   
+  it('should keep track of the current round', function() {
+    expect(game.currentRound).to.exist;
+  });
+
 });

@@ -21,6 +21,7 @@ class Round {
     this.turns++;
     this.currentCard = this.returnCurrentCard();
     return newTurn.giveFeedback();
+    
   }
 
   calculatePercentCorrect() {

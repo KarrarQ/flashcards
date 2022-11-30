@@ -35,7 +35,9 @@ describe('Game', function() {
 
   it('should be a method to start the game and create cards in the deck', function() {
     game.start();
-    expect(game.currentRound.currentCard).to.deep.equal(cardOne);
+    expect(game.currentRound.deck.cards.length).to.equal(30);
+    expect(game.currentRound.deck.cards[0]).to.deep.equal(cardOne);
+    expect(game.currentRound.deck.cards[1]).to.deep.equal(cardTwo);
   });
 
 });

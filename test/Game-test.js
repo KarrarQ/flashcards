@@ -40,4 +40,10 @@ describe('Game', function() {
     expect(game.currentRound.deck.cards[1]).to.deep.equal(cardTwo);
   });
 
+  it('should instantiate a new round using the current deck', function() {
+    game.start();
+    expect(game.currentRound.deck).to.exist;
+    expect(game.currentRound.turns).to.equal(0);
+    expect(game.currentRound.currentCard).to.deep.equal(cardOne);
+  });
 });

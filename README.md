@@ -20,6 +20,7 @@ Although students had previously worked with Mocha/Chai testing, this was the fi
 
 ## Page Demo
 An example of the game in action:
+![Example of the game in action!](https://media.giphy.com/media/3PWKPQEZT2ZfDEaXxJ/giphy.gif)
 
 ## Set Up
 1. Fork and clone this repo.
@@ -29,9 +30,3 @@ An example of the game in action:
 ## Creator Karrar Qasim
 [GitHub](https://github.com/KarrarQ)
 [LinkedIn](https://www.linkedin.com/in/karrar-qasim-b6307024b/)
-
-## Project Specs
-- The spec for this project can be found [here](https://frontend.turing.edu/projects/flash-cards.html).
-
-## Project GitHub Repo
-- The project repo can be found [here]().

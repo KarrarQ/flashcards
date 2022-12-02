@@ -18,3 +18,20 @@ Although students had previously worked with Mocha/Chai testing, this was the fi
 - Feedback will appear on the screen telling the user if they got the answer correct or incorrect.
 - The user may exit the game early with the shortcut **ctrl + c**, however they will not receive feedback on their score if they do so.
 
+## Page Demo
+An example of the game in action:
+
+## Set Up
+1. Fork and clone this repo.
+2. `cd` into the root directory.
+3. Run `node index.js` to play the game in your own CLI!
+
+## Creator Karrar Qasim
+[GitHub](https://github.com/KarrarQ)
+[LinkedIn](https://www.linkedin.com/in/karrar-qasim-b6307024b/)
+
+## Project Specs
+- The spec for this project can be found [here](https://frontend.turing.edu/projects/flash-cards.html).
+
+## Project GitHub Repo
+- The project repo can be found [here]().
